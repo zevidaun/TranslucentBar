@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><title>Modos</title><link rel="stylesheet" href="tb.css">
+<style>
+  .m{width:1280px;padding:40px 48px 44px;background:var(--night);display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .card{border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.12);background:var(--night2)}
+  .scr{height:250px;position:relative;overflow:hidden}
+  .scr .bar{transform:scale(.62);transform-origin:50% 100%;left:-31%;right:-31%}
+  .lbl{padding:16px 18px 18px}
+  .lbl b{font-family:var(--display);font-size:20px;font-weight:650}
+  .lbl b span{color:var(--cyan)}
+  .lbl p{color:var(--muted);font-size:13.5px;margin-top:4px;line-height:1.45}
+</style></head>
+<body>
+<div class="m">
+  <div class="card"><div class="scr"><div class="wall"></div><div class="bar normal" data-icons></div></div>
+    <div class="lbl"><b>Normal</b><p>La barra de Windows, tal cual. Al salir de la app vuelve siempre a este estado.</p></div></div>
+  <div class="card"><div class="scr"><div class="wall"></div><div class="bar trans" data-icons></div></div>
+    <div class="lbl"><b><span>Translúcido</span></b><p>Transparente con un tinte del color y la opacidad que elijas.</p></div></div>
+  <div class="card"><div class="scr"><div class="wall"></div><div class="bar glass" data-icons></div></div>
+    <div class="lbl"><b><span>Glass</span></b><p>Cristal esmerilado: desenfoca lo que hay detrás, con el mismo tinte.</p></div></div>
+</div>
+<script src="icons.js"></script>
+</body></html>

@@ -1,0 +1,16 @@
+﻿{
+    "fecha":  "2026-10-27T06:29:55+01:00",
+    "windows":  "26H2 26300.9711",
+    "intervalo_segundos":  30.04,
+    "procesadores_logicos":  32,
+    "cpu_segundos":  0,
+    "cpu_porcentaje_un_nucleo":  0,
+    "cpu_porcentaje_equipo":  0,
+    "working_set_inicial_bytes":  11038720,
+    "working_set_final_bytes":  10993664,
+    "memoria_privada_inicial_bytes":  1822720,
+    "memoria_privada_final_bytes":  1736704,
+    "objetivo_cpu_cero_cumplido_en_muestra":  true,
+    "objetivo_working_set_5_MB_cumplido":  false,
+    "alcance":  "Proceso residente. Incluye DLL compartidas en WorkingSet64. No atribuye el coste del puente y del compositor dentro de Explorer/DWM."
+}

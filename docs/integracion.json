@@ -1,0 +1,36 @@
+﻿{
+    "fecha":  "2026-10-27",
+    "pantallas":  [
+                      {
+                          "diferencia_translucido_glass":  46.8302,
+                          "barra":  "principal",
+                          "variacion_primer_refresco_backdrop":  0,
+                          "identidad_original_restaurada":  true
+                      },
+                      {
+                          "diferencia_translucido_glass":  46.8302,
+                          "barra":  "secundaria",
+                          "variacion_primer_refresco_backdrop":  0,
+                          "identidad_original_restaurada":  true
+                      }
+                  ],
+    "reinicio_explorer":  {
+                              "fondos_aplicados":  2,
+                              "mismo_controlador":  true,
+                              "error":  0
+                          },
+    "temas":  [
+                  {
+                      "fondos_aplicados":  2,
+                      "error":  0,
+                      "system_uses_light_theme":  1
+                  },
+                  {
+                      "fondos_aplicados":  2,
+                      "error":  0,
+                      "system_uses_light_theme":  0
+                  }
+              ],
+    "cierre_forzado":  "Restauración comprobada por píxeles en ambas barras.",
+    "identidad_pinceles_restaurados":  4
+}

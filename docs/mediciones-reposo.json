@@ -1,0 +1,15 @@
+{
+  "fecha": "2026-10-27",
+  "windows": "26H2 26300.9711",
+  "modo": "translucido",
+  "opacidad": 0,
+  "barras": 2,
+  "metodo": "Reinicio limpio de la app y muestras con Get-Process (WorkingSet64, PrivateMemorySize64) y Win32_PerfRawData_PerfProc_Process.WorkingSetPrivate, sin vaciar el working set.",
+  "muestras": [
+    { "segundos": 2,   "working_set_mib": 10.38, "working_set_privado_mib": 1.13, "memoria_privada_mib": 1.74, "cpu_s": 0 },
+    { "segundos": 30,  "working_set_mib": 10.33, "working_set_privado_mib": 1.09, "memoria_privada_mib": 1.65, "cpu_s": 0 },
+    { "segundos": 120, "working_set_mib": 10.33, "working_set_privado_mib": 1.09, "memoria_privada_mib": 1.65, "cpu_s": 0 },
+    { "segundos": 180, "working_set_mib": 10.34, "working_set_privado_mib": 1.09, "memoria_privada_mib": 1.65, "cpu_s": 0.0625 }
+  ],
+  "tras_usar_menus": { "working_set_mib": 22.38, "memoria_privada_mib": 3.16 }
+}

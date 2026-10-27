@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><title>Banner</title><link rel="stylesheet" href="tb.css">
+<style>
+  /* ?social → 1280×640 (vista previa de GitHub); por defecto 1280×420 (cabecera del README) */
+  .b{width:1280px;height:420px;position:relative;overflow:hidden;background:var(--night);display:grid;grid-template-columns:560px 1fr;gap:40px;align-items:center;padding:0 56px 0 72px}
+  .social .b{height:640px}
+  .b::before{content:"";position:absolute;inset:0;background:
+     radial-gradient(40% 70% at 20% 30%,rgba(95,212,255,.16),transparent 70%),
+     linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
+     background-size:auto,40px 40px,40px 40px;opacity:.9;-webkit-mask-image:linear-gradient(90deg,#000 40%,transparent 75%)}
+  .b>*{position:relative}
+  .logo{display:flex;align-items:center;gap:16px}
+  .mark{width:58px;height:58px;border-radius:16px;background:linear-gradient(160deg,#3b6cff,#ff5fa2);position:relative;overflow:hidden;box-shadow:0 10px 30px rgba(95,212,255,.25)}
+  .mark::after{content:"";position:absolute;left:6px;right:6px;bottom:7px;height:14px;border-radius:5px;background:rgba(255,255,255,.28);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.55)}
+  .word{font-family:var(--display);font-size:46px;font-weight:700;letter-spacing:-.5px}
+  .word span{color:var(--cyan)}
+  h1{font-family:var(--display);font-size:34px;font-weight:600;line-height:1.15;margin-top:26px;letter-spacing:-.3px}
+  h1 em{font-style:normal;background:linear-gradient(90deg,var(--cyan2),#c8b6ff);-webkit-background-clip:text;color:transparent}
+  .sub{color:var(--muted);font-size:16px;margin-top:10px}
+  .pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+  .pills span{font-size:13.5px;padding:6px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.04)}
+  .pills b{color:var(--cyan2);font-weight:600}
+  .scr{height:320px;border-radius:18px;position:relative;overflow:hidden;border:1px solid rgba(255,255,255,.14);box-shadow:0 40px 80px -30px rgba(0,0,0,.8)}
+  .social .scr{height:420px}
+  .tag{position:absolute;left:18px;top:16px;font-size:12px;font-family:var(--mono);color:#fff;background:rgba(7,11,22,.55);padding:5px 10px;border-radius:8px;border:1px solid rgba(255,255,255,.18)}
+  .foot{position:absolute;left:72px;bottom:34px;color:var(--faint);font-size:14px;display:none}
+  .social .foot{display:block}
+</style></head>
+<body>
+<div class="b">
+  <div>
+    <div class="logo"><div class="mark"></div><div class="word">Translucent<span>Bar</span></div></div>
+    <h1>Tu barra de Windows 11,<br><em>de cristal.</em></h1>
+    <p class="sub">Translúcida o con efecto glass, sin gastar tu PC.</p>
+    <div class="pills"><span><b>~1 MB</b> de memoria</span><span><b>0 %</b> CPU en reposo</span><span><b>433 KB</b>, un solo .exe</span><span>Sin red · sin admin</span></div>
+  </div>
+  <div class="scr"><div class="wall"></div><div class="tag">modo glass</div><div class="bar glass" data-icons></div></div>
+  <div class="foot">C++20 · Win32 · código abierto GPL-3.0</div>
+</div>
+<script src="icons.js"></script>
+<script>if (location.search.includes('social')) document.body.classList.add('social');</script>
+</body></html>
